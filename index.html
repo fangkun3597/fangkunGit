@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博雅互动</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 3000px; 
+			font-size: 14px;
+			font-family: "Arail","Microsoft YaHei","SimSun";
+        }
+        .nomargin{
+            margin: 0 !important;
+        }
+        .header{
+            width: 100%;
+            height: 58px;
+            background-color: #191D3A;
+        }
+        .inner_c{
+            width: 1000px;
+            margin: 0 auto; 
+        }
+        .logo{
+            float: left;
+            padding:10px 0 0 20px;
+        }
+        h1{
+            height: 35px;
+            width: 157px;
+            text-indent: -999em;
+            background: url(images/icons.png) no-repeat 0 0 ;
+        }
+        .logo a{
+            display: block;
+            height: 35px;
+            width: 157px;
+        }
+        .header .inner_c .nav{
+            float: left;
+            margin-left: 48px;
+            width: 603px;
+            height: 58px;
+        }
+        .header .inner_c .nav ul{
+            list-style: none;
+            overflow: hidden;
+        }
+        .header .inner_c .nav ul li{
+            float: left;
+            width: 85px;
+            height: 58px;
+            border-right: 1px solid #252947;
+        }
+        .header .inner_c .nav ul li.first{
+            border-left: 1px solid #252947;
+        }
+        .header .inner_c .nav ul li.current a{
+            color: white;
+            background-color: #252947;
+        }
+        .header .inner_c .nav ul li a{
+            display: block;
+            height: 58px;
+            text-align: center;
+            line-height: 58px;
+            text-decoration: none;
+            color:#818496;
+        }
+        .header .inner_c .nav ul li a:hover{
+            color: #fff;
+            background-color: #818496;
+        }
+        .joinus{
+            float: left;
+            width: 100px;
+            height: 33px;
+            margin: 12px 0 0 52px;
+        }
+        .joinus a{
+            display: block;
+            width: 100px;
+            height: 33px;
+            background: url(images/icons.png) no-repeat 0 -35px;
+            background-color: steelblue;
+        }
+        .joinus a:hover{
+            background: url(images/icons.png) no-repeat 0 -69px;
+        }
+        .banner{
+            height:567px;
+            position: relative;
+            /* background-color: #80D1EF; */
+            overflow: hidden;
+            background: url(images/bj.jpg) repeat-x;
+        }
+        .banner img{
+            position: absolute;
+            left: 50%;
+            margin-left: -960px;
+        }
+        .banner .check{
+            width: 94px;
+            height: 12px;
+            position: absolute;
+            left: 50%;
+            bottom: 20px;
+            margin-left: -47px;
+        }
+        .banner .check ol{
+            list-style: none;
+            overflow: hidden;
+        }
+        .banner .check ol li{
+            float: left;
+            height: 12px;
+            width: 12px;
+            background: url(images/icons.png) no-repeat -101px -36px;
+            margin-right: 15px;
+            cursor: pointer; /*-变小手-*/
+        }
+        .banner .check .cur{
+            background: url(images/icons.png) no-repeat -113px -36px;
+        }
+        .product{
+            margin-top: 50px;
+            height: 229px;
+            border-bottom: 1px solid red;
+            position: relative;
+        }
+        .product ul{
+            list-style: none;
+        }
+        .product ul li{
+            float: left;
+            width: 218px;
+            margin-right: 43px;
+        }
+        .product ul li.last{
+            width: 217px;
+        }
+        .product ul li a{
+            display: block;
+            padding-bottom: 20px; /* 没有设计图 这个距离自定义 */
+            text-decoration: none;
+            /*CSS3的过渡属性：*/
+			transition:all 1s ease 0s;
+        }
+        .product ul li a img{
+            display: block;
+        }
+        .product ul li a span{
+            text-align: center;
+            display: block;
+        }
+        .product ul li a span.c{
+            display: block; 
+            line-height: 40px;
+            font-weight: bold;
+        }
+        .product ul li a span.e{
+            font-size: 12px;
+ 			line-height: 12px;
+ 			color:#38B774;
+        }
+        .product ul li a span.e b{
+            font-weight: normal;
+            padding-right: 12px;
+            background: url(images/arrow.png) no-repeat right center; 
+        }
+        .product ul li a:hover {
+            background-color:seagreen;
+        }
+        .product ul li a:hover span.e,a:hover span.c{
+            color: #fff; 
+        }
+        .product ul li a:hover span b{
+            background: url(images/arrow2.png) no-repeat right center; 
+        }
+        .xuanze{
+            position: absolute;
+            width: 117px;
+			height: 12px;
+            left: 50%;
+            bottom: -6px;
+            margin-left: -59px;
+            background: yellow;
+        }
+        .xuanze ol{
+            padding-left: 17px;
+            list-style: none;
+        }
+        .xuanze ol li{
+            float: left;
+            width: 12px;
+            margin-right: 14px;
+            height: 12px;
+            background: url(images/icons.png) no-repeat -101px -36px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="inner_c">
+            <div class="logo">
+                <h1><a href="">博雅互动-最专业的游戏网站</a></h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li class="first current"><a href="">首页</a></li>
+                    <li><a href="">博雅游戏</a></li>
+                    <li><a href="">博雅新闻</a></li>
+                    <li><a href="">关于我们</a></li>
+                    <li><a href="">客服中心</a></li>
+                    <li><a href="">投资者关系</a></li>
+                    <li><a href="">校园大使</a></li>
+                </ul>
+            </div>
+            <div class="joinus">
+                <a href=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="images/banner1.jpg" alt="">
+        <div class="check">
+            <ol>
+                <li class="cur"></li>
+                <li></li>
+                <li></li>
+                <li class="nomargin"></li>
+            </ol>
+        </div>
+    </div>
+    <!-- 产品 -->
+    <div class="product inner_c">
+        <ul>
+            <li>
+                <a href="">
+                    <img src="images/pro1.png" alt="">
+                    <span class="c">四川麻将</span>
+                    <span class="e"><b>SICHUAN MAJIANG</b></span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/pro1.png" alt="">
+                    <span class="c">四川麻将</span>
+                    <span class="e"><b>SICHUAN MAJIANG</b></span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/pro1.png" alt="">
+                    <span class="c">四川麻将</span>
+                    <span class="e"><b>SICHUAN MAJIANG</b></span>
+                </a>
+            </li>
+            <li class="last nomargin">
+                <a href="">
+                    <img src="images/pro1.png" alt="" width="217px">
+                    <span class="c">四川麻将</span>
+                    <span class="e"><b>SICHUAN</b></span>
+                </a>
+            </li>
+        </ul>
+        <div class="xuanze">
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="nomargin"></li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
