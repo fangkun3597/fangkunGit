@@ -10,7 +10,6 @@
             padding: 0;
         }
         body{
-            height: 3000px; 
 			font-size: 14px;
 			font-family: "Arail","Microsoft YaHei","SimSun";
         }
@@ -189,7 +188,7 @@
             left: 50%;
             bottom: -6px;
             margin-left: -59px;
-            background: yellow;
+            background: white;
         }
         .xuanze ol{
             padding-left: 17px;
@@ -202,6 +201,160 @@
             height: 12px;
             background: url(images/icons.png) no-repeat -101px -36px;
             cursor: pointer;
+        }
+        .information{
+            height: 366px;
+            margin-top: 53px;
+            background: url(images/shan.jpg) no-repeat center bottom;
+        }
+        .information .news{
+            position: relative;
+        }
+        .information .news .hd{
+            float: left;
+            height: 310px;
+            width: 500px;
+            background: url(images/news_hd.jpg) no-repeat; 
+        }
+        .information .news .hd h3{
+            height: 0;
+            overflow: hidden;
+        }
+        .information .more{
+            position: absolute;
+            left: 219px;
+            top: 40px;
+        }
+        .information .more a{
+            display: block;
+            text-decoration: none;
+            text-align:center;
+            height: 26px;
+            width: 64px;
+            border: 1px solid green;
+            color: green;
+            border-radius: 5px;
+        }
+        .information .more a span{
+            display: block;
+            text-align:center;
+            line-height: 20px;
+        }
+        .information .more a:hover{
+            color:white;
+            background-color: green;
+        }
+        .information .news .bd{
+            padding: 110px 20px 0 20px;
+        }
+        .information .news .bd ul{
+            list-style: none;
+        }
+        .information .news .bd ul li{
+            line-height: 50px;
+            border-bottom: 1px solid #333;
+        }
+        .information .news .bd ul li .date{
+            margin-right: 21px;
+			color:#333;
+			font-size: 12px;       
+        }
+        .information .news .bd ul li a{
+            text-decoration: none;
+            color:#444866;
+        }
+        .information .news .bd ul li a:hover{
+            color:#33B972;
+        }
+        .information .jobs{
+            position: relative;
+            float: left;
+            height: 310px;
+            width: 500px;
+            background: url(images/jobs_bg.jpg) no-repeat; 
+        }
+        .information .jobs .more a{
+            border: 1px solid white;
+            color: white;
+        }
+        .information .jobs .more a span{
+            display: block;
+            text-align:center;
+            line-height: 20px;
+        }
+        .information .jobs .more a:hover{
+            color:green;
+            background-color: white;
+        }
+        .jobs .job_hd h3{
+            padding-top: 44px;
+            padding-left: 81px;
+        }
+        .jobs .job_hd h3 span{
+            display: block;
+            color: white;     
+        }
+        .jobs .job_hd h3 span.c{
+            font-size: 28px;
+			line-height: 28px;
+        }
+        .jobs .job_hd h3 span.e{
+            font-size: 12px;
+			font-weight: normal;
+			line-height: 22px;
+        }
+        .jobs .job_bd{
+            padding-left: 20px;
+            padding-right: 175px;
+        }
+        .jobs .job_bd h4{
+            line-height: 22px;
+			font-size: 14px;
+            color: white;
+        }
+        .jobs .job_bd ul{
+            list-style: none;
+        }
+        .jobs .job_bd ul li{
+            height: 37px;
+            line-height: 37px;
+            border-bottom: 1px solid  #6FDEA3;
+        }
+        .jobs .job_bd ul li a{
+            color: white;
+            text-decoration: none;
+        }
+        .jobs .job_bd ul li a:hover{
+            color: yellow;
+        }
+        .footer{
+            width: 100%;
+            height: 91px;
+			line-height: 91px;
+			background-color: #191D3A;
+			color:#6c6e7e;
+        }
+        .footer .link{
+            float: left;
+            font-size: 12px;
+        }
+        .footer .link a{
+            text-decoration: none;
+            color:#6c6e7e;
+        } 
+        .footer .copyright{
+            float: right;
+            font-size: 12px;
+            padding-left: 70px;
+        }
+        .footer .copyright a{
+            text-decoration: none;
+            color:#6c6e7e;
+        }
+        .govicon{
+            width: 40px;
+            position: relative;
+            top: 19px;
         }
     </style>
 </head>
@@ -277,6 +430,82 @@
                 <li></li>
                 <li class="nomargin"></li>
             </ol>
+        </div>
+    </div>
+    <!-- news 和 jobs -->
+    <div class="information inner_c">
+        <div class="news">
+            <div class="hd">
+                <h3>博雅新闻</h3>
+                <div class="bd">
+                    <ul>
+                        <li class="first">
+                            <span class="date">11 / 18</span>
+                            <span class="title">
+                                <a href="#">博雅互动荣获中国融资上市公司大奖之最具潜力上市公司奖</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="date">11 / 18</span>
+                            <span class="title">
+                                <a href="#">博雅互动荣获中国融资上市公司大奖之最具潜力上市公司奖</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="date">11 / 18</span>
+                            <span class="title">
+                                <a href="#">博雅互动荣获中国融资上市公司大奖之最具潜力上市公司奖</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="date">11 / 18</span>
+                            <span class="title">
+                                <a href="#">博雅互动荣获中国融资上市公司大奖之最具潜力上市公司奖</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="more">
+                <a href=""><span>MORE<sup>+</sup></span></a>
+            </div>
+
+        </div>
+        <div class="jobs">
+            <div class="more">
+                <a href=""><span>MORE<sup>+</sup></span></a>
+            </div>
+            <div class="job_hd">
+                <h3>
+                    <span class="c">专场招聘</span>
+                    <span class="e">BOYA JOBS</span>
+                </h3>
+            </div>
+            <div class="job_bd">
+                <h4>专场招聘岗位：</h4>
+                <ul>
+                    <li><a href="">PHP开发工程师</a></li>
+                    <li><a href="">PHP开发工程师</a></li>
+                    <li><a href="">PHP开发工程师</a></li>
+                    <li><a href="">PHP开发工程师</a></li>			
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- foot -->
+    <div class="footer">
+        <div class="inner_c">
+            <div class="link">
+                <a href=""><span>网站地图</span></a>
+                <span>|</span>
+                <a href=""><span>免责声明</span></a>
+            </div>
+            <div class="copyright">
+                Copyright © 2004 - 2016 博雅互动(Boyaa Interactive) 
+				<a href="">粤ICP备05062536号</a>
+                增值电信业务经营许可证：粤B2-20110513
+                <img src="images/govIcon.gif" alt="" class="govicon">
+            </div>
         </div>
     </div>
 </body>
